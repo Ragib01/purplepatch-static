@@ -1,16 +1,13 @@
 @charset "UTF-8";
-/*!
-  Theme Name: Saaspik
-  Theme URI: http://pixelsigns.com/saaspik
-  Author: PixelSigns
-  Author URI: http://www.pixelsigns.co/
-  Description: Software, App, SaaS landing HTML Template
-  Version: 1.0.0
-  License: GNU General Public License v2 or later
-  License URI: http://www.gnu.org/licenses/gpl-2.0.html
-  Text Domain: saaspik
-  Tags: game,business,coporate,startup
-  */
+
+/*--------------------------------------------------------------
+## Image Content
+--------------------------------------------------------------*/
+:root {
+	--brand-color-deep		: #6800BC;
+	--brand-color-light		: #AA43FF;
+}
+
 /*--------------------------------------------------------------
   >>> TABLE OF CONTENTS:
   ----------------------------------------------------------------
@@ -3449,7 +3446,7 @@ select {
 }
 
 .banner .banner-content .banner-title {
-	font-size: 60px;
+	font-size: 58px;
 	line-height: 70px;
 	font-weight: 400;
 	color: #fff;
@@ -3479,15 +3476,15 @@ select {
 
 .banner .banner-content .banner-btn:hover {
 	background: #fff;
-	color: #fa7070;
+	color: var(--brand-color-deep);
 	-webkit-box-shadow: 0px 20px 30px 0px rgba(79, 35, 35, 0.15);
 	box-shadow: 0px 20px 30px 0px rgba(79, 35, 35, 0.15);
 }
 
 .banner.banner-one {
 	height: 1050px;
-	background-image: -o-linear-gradient(350deg, #fa7070 0%, #fa9770 100%);
-	background-image: linear-gradient(100deg, #fa7070 0%, #fa9770 100%);
+	background-image: -o-linear-gradient(350deg, #6800BC 0%, #AA43FF 100%);
+	background-image: linear-gradient(100deg, #6800BC 0%, #AA43FF 100%);
 	position: relative;
 	overflow-x: hidden;
 }
