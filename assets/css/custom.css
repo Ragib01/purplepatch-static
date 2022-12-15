@@ -1,43 +1,152 @@
-.circle {
-    width:calc(100vw / 6);
-    height:calc(100vw / 6);
-    background:red;
-    border-radius:51%;
-    float:left;
-    margin:6px;
 
+.bubble-container {
+  display: flex;
+  width: 100%;
+}
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  /* background-color: black; */
+  height: calc(100vw * .19);
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;  height: 100%;
+  border-radius: 100%;
+  /* background: radial-gradient(#7A509D, #7A509D); */
+  color: azure;
 }
 
-.circle__inner {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+@-webkit-keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(85, 13, 143, 0.6);
+    transform: translatey(0px);
   }
-  
-  .circle__wrapper {
-    display: table;
-    width: 100%;
-    height: 100%;
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(85, 13, 143, 0.2);
+    transform: translatey(-20px);
   }
-  
-  .circle__content {
-    display: table-cell;
-    padding: 1em;
-    vertical-align: middle;
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(85, 13, 143, 0.6);
+    transform: translatey(0px);
   }
-  
-  @media (min-width: 480px) {
-    .circle__content {
-      font-size: 2em;
-    }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(85, 13, 143, 0.6);
+    transform: translatey(0px);
   }
-  
-  @media (min-width: 768px) {
-    .circle__content {
-      font-size: 4em;
-    }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(85, 13, 143, 0.2);
+    transform: translatey(-20px);
   }
-  
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(85, 13, 143, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+
+.circle span:nth-child(1) {
+  font-size: 1vw;
+}
+
+
+.bubble-container div:nth-child(1) .circle {
+  width: 70%; height: 70%;
+  background: radial-gradient(#7A509D, #4A206D);
+  font-size: 2vw;
+  transform: translatey(0px);
+  -webkit-animation: float 2s ease-in-out infinite;
+  animation: float 2s ease-in-out infinite;
+}
+.bubble-container div:nth-child(2) .circle {
+  width: 90%; height: 90%;
+  background: radial-gradient(#974FD1, #530B8D); 
+  font-size: 3vw;
+  transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
+}
+.bubble-container div:nth-child(3) .circle {
+  width: 70%; height: 70%;
+  background: radial-gradient(#7A509D, #4A206D);
+  font-size: 2vw;
+  transform: translatey(0px);
+  -webkit-animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
+}
+
+.bubble-container div:nth-child(1) .circle::before {
+  content: "Developed Banner Sets";
+  font-size: 17px;
+  height: 80px;
+  line-height: 0.78;
+  line-height: 1;
+  position: absolute;
+  bottom: -89px;
+  /* left: 13%; */
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: #6800BC;
+  opacity: 0.9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bubble-container div:nth-child(2) .circle::before {
+  content: "Campaigns";
+  font-size: 20px;
+  height: 80px;
+  line-height: 0.78;
+  line-height: 1;
+  position: absolute;
+  bottom: -89px;
+  /* left: 13%; */
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: #6800BC;
+  opacity: 0.9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bubble-container div:nth-child(3) .circle::before {
+  content: "Leading Brands";
+  font-size: 17px;
+  height: 80px;
+  line-height: 0.78;
+  line-height: 1;
+  position: absolute;
+  bottom: -89px;
+  /* left: 13%; */
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: #6800BC;
+  opacity: 0.9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* .circle::before {
+  content: "\201C";
+  font-size: 70px;
+  height: 82px;
+  line-height: 0.78;
+  line-height: 1;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: #ccc;
+  opacity: 0.9;
+} */
