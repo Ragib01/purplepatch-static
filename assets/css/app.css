@@ -2076,7 +2076,7 @@ select {
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	position: absolute;
-	background: #fa7070;
+	background: var(--brand-color-deep);
 	top: 50%;
 	left: 50%;
 	width: 30px;
@@ -2090,13 +2090,13 @@ select {
 	-webkit-animation: blob-grow linear 3.4s infinite;
 	animation: blob-grow linear 3.4s infinite;
 	border-radius: 50%;
-	-webkit-box-shadow: 0 -10px 40px -5px #fa7070;
-	box-shadow: 0 -10px 40px -5px #fa7070;
+	-webkit-box-shadow: 0 -10px 40px -5px var(--brand-color-deep);
+	box-shadow: 0 -10px 40px -5px var(--brand-color-deep);
 }
 
 .blob {
 	position: absolute;
-	background: #fa7070;
+	background: var(--brand-color-deep);
 	top: 50%;
 	left: 50%;
 	width: 30px;
