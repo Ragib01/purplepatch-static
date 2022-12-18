@@ -11723,8 +11723,8 @@ Logo List
   ##  Call To Action
   --------------------------------------------------------------*/
 .call-to-action {
-	background-image: -o-linear-gradient(350deg, #fa7070 0%, #fa9770 100%);
-	background-image: linear-gradient(100deg, #fa7070 0%, #fa9770 100%);
+	background-image: -o-linear-gradient(350deg, #6800BC 0%, #AA43FF 100%);
+	background-image: linear-gradient(100deg, #6800BC 0%, #AA43FF 100%);
 	padding: 111px 0 120px;
 	overflow: hidden;
 }
